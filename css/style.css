@@ -21,9 +21,19 @@
 /* BASE STYLES
 /*******************************************/
 
-body {}
+body {
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 
+h1 {
+  font-family: "Italic", serif;
+}
 
 /******************************************
 /* LAYOUT
@@ -44,6 +54,7 @@ nav ul li a {
   text-decoration: none;
   width: 50%;
   text-align: right;
+  color: #000;
 }
 
 .welcome-sect,
@@ -53,8 +64,8 @@ nav ul li a {
 .review-sect {
   float: left;
   width: 100%;
-  height: 500px;
-  padding: 15pxs;
+  height: 600px;
+  padding: 15px;
 }
 
 
@@ -65,5 +76,82 @@ nav ul li a {
 .top-img-wrapper {
   background-image: url('../img/welcom-sect-pic.jpg');
   background-size: cover;
-  min-height: 600px;
+  min-height: 700px;
+}
+
+.welcome-sect {
+  margin-top: 30px;
+  padding-left: 60px;
+}
+
+.welcome-sect h1 {
+  margin: 0;
+  width: 35%;
+  font-size: 60px;
+}
+
+.welcome-sect>form {
+  padding-top: 10px;
+}
+
+.welcome-sect>form input {
+  width: 25%;
+  height: 40px;
+}
+
+.welcome-sect select {
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 0.2em;
+}
+
+.welcome-sect ul {
+  padding: 5px;
+  margin: 0;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.welcome-sect li {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+
+.welcome-sect li i {
+  color: orange;
+}
+
+.about-sect {
+  background-image: url('../img/about-sect-pic.jpg');
+  background-size: cover;
+}
+
+.about-sect>div {
+  width: 70%;
+  padding: 130px;
+  margin-left: 250px;
+}
+
+.about-sect h1 {
+  font-size: 50px;
+}
+
+.about-sect span {
+  color: orange;
+  font-size: 20px;
+}
+
+.about-sect button {
+  margin-top: 30px;
+  width: 170px;
+  height: 40px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 0.2em;
 }
