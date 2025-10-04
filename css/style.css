@@ -155,3 +155,50 @@ nav ul li a {
   border: none;
   border-radius: 0.2em;
 }
+
+.order-sect {
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.order-sect span {
+  color: orange;
+  padding: 15px;
+}
+
+.order-sect h1 {
+  font-size: 40px;
+}
+
+.order-sect ul {
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+.order-sect li {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.order-sect a {
+  text-decoration: none;
+  color: #000;
+}
+
+.order-pics {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.order-pics div {
+  float: left;
+  width: 25%;
+}
+
+.order-pics img {
+  width: 200px;
+  height: 300px;
+}
