@@ -141,10 +141,6 @@ nav ul li a {
   font-size: 50px;
 }
 
-.about-sect span {
-  color: orange;
-  font-size: 20px;
-}
 
 .about-sect button {
   margin-top: 30px;
@@ -156,18 +152,25 @@ nav ul li a {
   border-radius: 0.2em;
 }
 
-.order-sect {
+.order-sect,
+.booking-sect,
+.review-sect {
   background-color: aliceblue;
   text-align: center;
 }
 
-.order-sect span {
+.order-sect span,
+.about-sect span,
+.booking-sect span,
+.review-sect span {
   color: orange;
   padding: 15px;
 }
 
-.order-sect h1 {
-  font-size: 40px;
+.order-sect h1,
+.booking-sect h1,
+.review-sect h1 {
+  font-size: 50px;
 }
 
 .order-sect ul {
@@ -201,4 +204,138 @@ nav ul li a {
 .order-pics img {
   width: 200px;
   height: 300px;
+}
+
+.booking-sect {
+  height: 900px;
+}
+
+.booking-sect div:last-child {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.booking-sect img {
+  height: 400px;
+  width: 400px;
+}
+
+#phoneNo {
+  color: orange;
+  font-size: 30px;
+}
+
+.time-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.time-container p {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.time-container p:nth-child(3),
+.time-container p:nth-child(4) {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.review-sect p {
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+
+  header ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header li {
+    width: 100%;
+    border: 1px solid wheat;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    background-color: orange;
+    font-weight: bold;
+  }
+
+  header li a:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .welcome-sect {
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    height: 400px;
+  }
+
+  .welcome-sect h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .about-sect {
+    background-color: azure;
+    background-image: none;
+  }
+
+  .about-sect div {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .order-sect,
+  .review-sect,
+  .about-sect {
+    height: auto;
+  }
+
+  .order-pics {
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  .order-pics div {
+    float: left;
+    width: 50%;
+  }
+
+  .order-pics div img {
+    padding: 5px;
+  }
+
+  .booking-sect div:last-child {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .time-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .time-container p:nth-child(3),
+  .time-container p:nth-child(4) {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
 }
